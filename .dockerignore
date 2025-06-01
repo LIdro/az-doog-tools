@@ -1,0 +1,26 @@
+# Ignore unnecessary files during Docker build
+.git
+.github
+.vscode
+*.md
+.gitignore
+.gitattributes
+
+# Ignore logs and temporary files
+logs/*
+tmp/*
+memory/*
+
+# Ignore local development files
+.env
+*.log
+
+# But keep the docker directory and essential files
+!docker/
+!requirements.txt
+!*.py
+!prompts/
+!python/
+!webui/
+!instruments/
+!knowledge/
